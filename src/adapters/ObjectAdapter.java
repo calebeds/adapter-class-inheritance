@@ -1,11 +1,12 @@
 package adapters;
 
+import integer.values.IntegerValue;
 import integer.values.IntegerValueInterface;
 
-public class ObjectAdapter {
-    private IntegerValueInterface myInt;
+public class ObjectAdapter implements IntegerValueInterface {
+    private IntegerValue myInt;
 
-    public ObjectAdapter(IntegerValueInterface myInt) {
+    public ObjectAdapter(IntegerValue myInt) {
         this.myInt = myInt;
     }
 
